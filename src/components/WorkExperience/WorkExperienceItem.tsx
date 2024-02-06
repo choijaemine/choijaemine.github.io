@@ -44,7 +44,6 @@ const WorkExperienceItem = ({ name, position, period, markdown, imgSrc }: WorkEx
 
         <div className={'pb-10'}>
           <h2>스마텔 메인 홈페이지 <Link href={'https://smartel.kr/'}>Link</Link></h2>
-          <p>2023. 10 - 2024. 01</p>
           <h3 className={'text-[20px]'}>Description.</h3>
           <p>기존 홈페이지는 페이지 마다 개발 업체와 도메인 주소가 다른 문제가 있었습니다. 이는 SEO에 좋지 않았으며, 페이지간 쿠키와 같은 데이터를 공유하기 어려웠습니다. 기존 홈페이지의 문제점들을
             개선하기 위해 새로운 홈페이지를 자체 개발하였습니다. SEO를 고려하여 개발하였기에 오픈 일주일만에 구글 검색 1페이지에 노출되었으며, 조회수 10만회를 달성하였습니다.</p>
@@ -65,6 +64,7 @@ const WorkExperienceItem = ({ name, position, period, markdown, imgSrc }: WorkEx
                 제작하였습니다.
               </li>
             </ul>
+            <li>Vercel을 활용한 CI/CD</li>
             <li>지속적인 피드백 및 QA사항 관리</li>
           </ul>
           <h3 className={'text-[20px]'}>Tech Stack.</h3>
@@ -72,7 +72,6 @@ const WorkExperienceItem = ({ name, position, period, markdown, imgSrc }: WorkEx
         </div>
         <div className={'pb-10'}>
           <h2>스마텔 관리자 홈페이지</h2>
-          <p>2023. 10 - 2024. 01</p>
           <h3 className={'text-[20px]'}>Description.</h3>
           <p>
             스마텔의 서비스를 관리할 수 있는 백오피스 페이지를 제작하였습니다.<br/>
@@ -111,34 +110,48 @@ const WorkExperienceItem = ({ name, position, period, markdown, imgSrc }: WorkEx
           <h2>flutter 기반 서비스앱 <Link
               href={'https://play.google.com/store/apps/details?id=com.smartel.flutterpostpaid.flutter_postpaid_app2'}>Link</Link>
           </h2>
-          <p>2023. 10 - 2023. 11</p>
           <h3 className={'text-[20px]'}>Description.</h3>
-
-        </div>
-
-        <div className={'pb-10'}>
-        <h2>이니시스 결제 서비스</h2>
-          <p>2023. 10 - 2024. 01</p>
-        </div>
-
-        <div className={'pb-10'}>
-          <h2>이니시스,카카오, 다우API 활용 전자 서명</h2>
-          <p>2023. 10 - 2024. 01</p>
+          <p>스마텔 이용자의 현제 요금제의 데이터 사용량, 지난 청구 요금 조회가 가능한 앱개발(Android)</p>
+          <h3 className={'text-[20px]'}>What did I do.</h3>
+          <ul>
+            <li>메인페이지, 청구, 이용량 페이지 UI 제작.</li>
+            <li>데이터 이용량 조회 api 설계</li>
+            <li>청구 요금 조회 api 설계</li>
+          </ul>
+          <h3 className={'text-[20px]'}>Tech Stack.</h3>
+          <p>flutter, fastapi, MongoDB</p>
         </div>
 
         <div className={'pb-10'}>
           <h2>LG U+셀프 개통 서비스</h2>
-          <p>2023. 10 - 2024. 01</p>
+          <h3 className={'text-[20px]'}>Description.</h3>
+          <p>고객 스스로 처음부터 끝까지 개통이 가능한 셀스개통 서비스 제작</p>
+          <h3 className={'text-[20px]'}>What did I do.</h3>
+          <ul>
+            <li>AWS ALB를 활용한 로드밸런싱</li>
+            <li>next.js의 SSR 기반 FrontEnd 및 BackEnd 개발</li>
+            <li>신청 프로세스에 Redis를 활용하여 api 간 데이터 공유</li>
+            <li>AWS ALB를 활용한 로드밸런싱</li>
+          </ul>
+          <h3 className={'text-[20px]'}>Tech Stack.</h3>
+          <p>AWS - ALB, VPC, EC2, TypeScript, Next.js, TailwindCSS, FastAPI, Docker, Redis</p>
         </div>
 
         <div className={'pb-10'}>
           <h2>LG U+바로 배송 서비스</h2>
-          <p>2023. 10 - 2024. 01</p>
+          <h3>Description.</h3>
+          <p>신청 즉시 유심을 2시간안에 받아서 개통을 진행 할 수있는 서비스 제작</p>
+          <h3 className={'text-[20px]'}>What did I do.</h3>
+          <ul>
+            <li>next.js의 SSR 기반 FrontEnd 및 BackEnd 개발</li>
+            <li>이니시스 결제 모듈 연동</li>
+            <li>휴대폰 인증번호 발송 기능 구현</li>
+            <li>AWS 활용한 로드밸런싱</li>
+          </ul>
         </div>
 
         <div>
           <h2>스마텔 가입 신청서</h2>
-          <p>2023. 04 - 2024. 06</p>
           <h3 className={'text-[20px]'}>Description.</h3>
           <p>외주업체를 통해 제작된 알뜰폰 요금제 신청서 migration 작업 진행</p>
           <h3 className={'text-[20px]'}>What did I do.</h3>
